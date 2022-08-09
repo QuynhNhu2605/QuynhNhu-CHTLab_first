@@ -1,0 +1,624 @@
+@import url('//db.onlinewebfonts.com/c/1270fb5be26d4dccb54c4dc81daa5100?family=Shentox');
+@import url('http://fonts.cdnfonts.com/css/utm-banque');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tomorrow&display=swap');
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+html {
+    background-color: black;
+}
+
+#root {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.background {
+    position: absolute;
+    width: 99%;
+    background: linear-gradient(rgba(0, 0, 0, 0.319), rgb(0, 0, 0)), url('~/src/Image/BG-adr_INO\ 1.png');
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 98*2px);
+    margin: auto;
+    margin-top: 50px;
+}
+
+.logo {
+    width: 222px;
+    height: 44px;
+}
+
+.MyPacks {
+    height: 48px;
+    border: 1px solid #00F9FF;
+    background: linear-gradient(180deg, rgba(38, 34, 80, 0.65) 0%, rgba(27, 25, 66, 0.85) 57.44%, #090B22 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    position: relative;
+}
+
+.MyPacks:after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 10px + 1px);
+    left: -2px;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #080a15;
+}
+
+.MyPacks:before {
+    content: "";
+    position: absolute;
+    top: calc(100% - 10px);
+    left: -1px;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #00F9FF;
+}
+
+img.icon {
+    width: 29px;
+    height: 27px;
+    margin-left: 27px;
+}
+
+
+
+.MyPack-text {
+    width: 73px;
+    height: 18px;
+
+    font-family: 'Shentox';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height, or 112% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 16px;
+}
+
+.MyPack-dropdow {
+    width: 10px;
+    height: 5px;
+    border-radius: 0.5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+    cursor: pointer;
+    margin-left: 16px;
+    margin-right: 25px;
+}
+
+#dropdow {
+    width: 186px;
+    position: absolute;
+    right: -1px;
+    top: calc(100% + 1px);
+    display: none;
+    z-index: 10000;
+}
+
+#dropdow li {
+    width: 186px;
+    height: 48px;
+    background: linear-gradient(180deg, rgba(38, 34, 80, 0.65) 0%, rgba(27, 25, 66, 0.85) 57.44%, #090B22 100%);
+    border: 1px solid #00F9FF;
+    display: flex;
+    align-items: center;
+}
+
+.myPack-icon-img {
+    width: 21px;
+    margin-left: 11px;
+}
+
+.myPack-icon-name {
+    height: 18px;
+    font-family: 'Shentox';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-left: 7px;
+}
+
+.MyPack-dropdow:hover {
+    border-top: 5px solid rgb(148, 148, 148);
+}
+
+.myPack-icon-content {
+    display: flex;
+    justify-content: space-between;
+    width: 127px;
+}
+
+.myPack-icon-amount {
+    width: 27px;
+    height: 18px;
+    font-family: 'Shentox';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+
+.title {
+    width: 289px;
+    height: 33px;
+    margin: auto;
+    font-family: 'UTM Banque', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 24px;
+    /* or 80% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.time-start {
+    width: 407px;
+    height: 24px;
+    margin: auto;
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.time-existence {
+    position: relative;
+    width: 407px;
+    height: 110px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 7px;
+}
+
+.time-existence--number {
+    width: 70px;
+    height: 110px;
+    position: relative;
+}
+
+.time-existence-text {
+    width: 100%;
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: 63.64%;
+    bottom: 3.64%;
+}
+
+.time-existence-display {
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 36px);
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.time-existence-up {
+    width: 100%;
+    height: 34.58px;
+    background: linear-gradient(180deg, #474747 -15.18%, #333333 92.41%);
+    margin: auto;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.time-existence-dow {
+    width: 100%;
+    height: 34.58px;
+    background: linear-gradient(0deg, #262626 -20.98%, #191919 114.88%);
+    margin: auto;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.time-existence-between {
+    width: 3.4px;
+    height: 20.19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: calc(50% - 30px);
+    right: calc(((407px - 7px)/2 - 4*67px)/3);
+}
+
+
+.time-existence-between-box {
+    width: 3.4px;
+    height: 3.4px;
+    background-color: white;
+}
+
+.product {
+    margin: auto;
+    width: 72%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-title {
+    font-family: 'UTM Banque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.product-pack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.product-price {
+    font-family: 'UTM Banque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #9C9C9C 0%, #D1D1D1 57.79%, #6F6F6F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.product-price p {
+    margin-left: 6px;
+    -webkit-text-fill-color: rgba(243, 138, 0, 1);
+}
+
+.product-price div {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    background-image: url('~/src/Image/bitcoin-btc-logo 1.png');
+    background-repeat: no-repeat;
+}
+
+.packs-infor {
+    width: 222px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 4px;
+}
+
+.packs-infor li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.packs-infor li p:nth-child(1) {
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.packs-infor li p:nth-child(2) {
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+
+}
+
+.packs-infor li:nth-child(1) p:nth-child(2) {
+    background: linear-gradient(180deg, #FFEE54 0%, #FF8A58 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.packs-infor li:nth-child(2) p:nth-child(2) {
+    background: linear-gradient(180deg, #FF9FD0 0%, #FF1B90 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.packs-infor li:nth-child(2) {
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+.product-MaxOpvalue {
+    width: 271px;
+    height: 24px;
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.product-init-price {
+    width: 278px;
+    height: 25px;
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    background: linear-gradient(90deg, #9C9C9C 0%, #D1D1D1 57.79%, #6F6F6F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.frame {
+    background-image: url('~/src/Image/Vector.png');
+    background-repeat: no-repeat;
+}
+
+.product-img {
+    width: 222px;
+    height: 242px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img img {
+    width: 161px;
+}
+
+.btn-packs {
+    width: 223px;
+    height: 45px;
+    margin-top: 15px;
+    background-image: url('~/src/Image/button.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-packs-text {
+    width: 151px;
+    height: 19px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 917px) {
+    .background {
+        width: 100%;
+    }
+    .MyPacks{
+        height: 35px;
+    }
+    
+  
+    img.icon {
+        margin: 6px 9px;
+        width: 21.05px;
+        height: 20px;
+    }
+    .time-existence-text {
+        font-size: 13px;
+    }
+    .logo {
+        width: 150px;
+        height: 30px;
+    }
+    .header {
+        width: calc(100% - 30*2px);
+    }
+    .title {
+        width: 300px;
+        height: 37px;
+        margin-top: 26px;
+    }
+    .time-start {
+        width: auto;
+        height: 13px;
+        font-size: 15px;
+    }
+
+    .time-existence {
+        width: 300px;
+        height: 57px;
+    }
+
+    .time-existence--number {
+        width: 35px;
+        height: 36px;
+        position: relative;
+    }
+
+    .time-existence-text {
+        font-size: 11px;
+    }
+
+    .time-existence-display {
+        font-size: 20px;
+        top: calc(50% - 15px);
+    }
+
+    .time-existence-up {
+        height: 18px;
+    }
+
+    .time-existence-dow {
+        height: 18px;
+    }
+
+    .time-existence-between {
+        position: absolute;
+        width: 1.76px;
+        height: 10.46px;
+        top: calc(50%);
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .MyPacks {
+        height: 32px;
+        border: 1px solid #00F9FF;
+        background: linear-gradient(180deg, rgba(38, 34, 80, 0.65) 0%, rgba(27, 25, 66, 0.85) 57.44%, #090B22 100%);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .MyPack-text {
+        display: none;
+    }
+
+    .MyPack-dropdow {
+        display: none;
+    }
+
+    img.icon {
+        margin: 6px 9px;
+        width: 21.05px;
+        height: 20px;
+    }
+
+    .header {
+        width: calc(100% - 16*2px);
+    }
+
+    .logo {
+        width: 100px;
+        height: 20px;
+    }
+
+    .title {
+        width: 279px;
+        height: 33px;
+        margin-top: 26px;
+    }
+
+    .time-start {
+        width: 250px;
+        height: 13px;
+        font-size: 12px;
+    }
+
+    .time-existence {
+        width: 227px;
+        height: 57px;
+    }
+
+    .time-existence--number {
+        width: 35px;
+        height: 36px;
+        position: relative;
+    }
+
+    .time-existence-text {
+        font-size: 11px;
+    }
+
+    .time-existence-display {
+        font-size: 20px;
+        top: calc(50% - 15px);
+    }
+
+    .time-existence-up {
+        height: 18px;
+    }
+
+    .time-existence-dow {
+        height: 18px;
+    }
+
+    .time-existence-between {
+        width: 1.76px;
+        height: 10.46px;
+        top: calc(50% );
+        right: calc(((227px - 7px)/2 - 4*36px)/3)
+    }
+    .product {
+        display: block;
+    }
+
+}
